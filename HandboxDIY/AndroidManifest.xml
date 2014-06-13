@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.handbox.handboxdiy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+   <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="es.handbox.app.FrontActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.handbox.app.EnterActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="es.handbox.app.EnterActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.handbox.app.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="es.handbox.app.LoginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.handbox.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="es.handbox.app.MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.handbox.app.DetailsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="es.handbox.app.DetailsActivity" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"   android:value="@string/app_id"/>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity">
+        </activity>
+        
+    </application>
+</manifest>
