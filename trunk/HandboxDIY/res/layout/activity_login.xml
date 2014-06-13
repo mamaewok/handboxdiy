@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="510dip"
+    android:layout_marginTop="10dip"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_ma"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@+id/btn_login"
+        android:text="@string/registro"
+        android:textColor="#343333"
+        android:textSize="9pt" />
+
+    <!-- CORREO -->
+
+    <EditText
+        android:id="@+id/et_co"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_ma"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/tv_pw1"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tv_ma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_pw1"
+        android:layout_alignLeft="@+id/tv_pw2"
+        android:layout_marginBottom="14dp"
+        android:text="@string/user_mail"
+        android:textColor="#3a9696"
+        android:textSize="8pt" />
+
+    <!-- CONTRASEÑA -->
+
+    <TextView
+        android:id="@+id/tv_pw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_pw2"
+        android:layout_alignLeft="@+id/tv_ma"
+        android:layout_marginBottom="14dp"
+        android:text="@string/user_password1"
+        android:textColor="#3a9696"
+        android:textSize="8pt" />
+
+    <EditText
+        android:id="@+id/et_pw1"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_co"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_pw1"
+        android:layout_marginRight="15dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword" />
+
+    <!-- REPITE CONTRASEÑA -->
+
+    <TextView
+        android:id="@+id/tv_pw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_ni"
+        android:layout_alignLeft="@+id/tv_ni"
+        android:layout_marginBottom="14dp"
+        android:text="@string/user_password2"
+        android:textColor="#3a9696"
+        android:textSize="8pt" />
+
+    <EditText
+        android:id="@+id/et_pw2"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_pw1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_pw2"
+        android:layout_marginRight="15dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- NICK -->
+
+    <TextView
+        android:id="@+id/tv_ni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox1"
+        android:layout_alignLeft="@+id/tv_titulo"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/user_nick"
+        android:textColor="#3a9696"
+        android:textSize="8pt" />
+
+    <EditText
+        android:id="@+id/et_ni"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_pw2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_pw2"
+        android:layout_marginRight="15dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text" />
+
+    <!-- BOTONes -->
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_ni"
+        android:layout_centerVertical="true"
+        android:text="@string/condiciones" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/login"
+        android:textColor="#FAFAFA" />
+
+</RelativeLayout>

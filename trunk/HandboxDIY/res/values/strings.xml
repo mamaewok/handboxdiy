@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Handbox</string>
+    <string name="saludo">Bienvenido</string>
+    <string name="craftlover">¿Aún no eres craftlover?</string>
+    <string name="user_mail">Correo</string>
+    <string name="user_password1">Contraseña</string>
+    <string name="user_password2">Repite</string>
+    <string name="user_nick">Nick</string>
+    <string name="login">Aceptar</string>
+    <string name="condiciones">Acepto las condiciones</string>
+    <string name="registro">REGISTRO</string>
+    <string name="empezar">Empezar</string>
+    <string name="app_id">725710524136767</string>
+
+</resources>
